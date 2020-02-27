@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>fffb3446-f87c-4f61-8e00-4df4e0aa765e</ProjectGuid>
+    <ProjectGuid>{FFFB3446-F87C-4F61-8E00-4DF4E0AA765E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>ClassLibrary</RootNamespace>
@@ -31,24 +31,104 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System"/>
-    
-    <Reference Include="System.Core"/>
-    <Reference Include="System.Xml.Linq"/>
-    <Reference Include="System.Data.DataSetExtensions"/>
-    
-    
-    <Reference Include="Microsoft.CSharp"/>
-    
-    <Reference Include="System.Data"/>
-    
-    <Reference Include="System.Net.Http"/>
-    
-    <Reference Include="System.Xml"/>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\platform-common\Tavisca.Common.Plugins.Aerospike\Tavisca.Common.Plugins.Aerospike.csproj">
+      <Project>{8937c6f6-7d1d-4fad-a65b-1cfb99ad2ee7}</Project>
+      <Name>Tavisca.Common.Plugins.Aerospike</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\platform-common\Tavisca.Common.Plugins.Aws\Tavisca.Common.Plugins.Aws.csproj">
+      <Project>{ab914ba9-0038-43fc-9dda-e9553abe3850}</Project>
+      <Name>Tavisca.Common.Plugins.Aws</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\platform-common\Tavisca.Common.Plugins.BinarySerializer\Tavisca.Common.Plugins.BinarySerializer.csproj">
+      <Project>{3d2d4c62-6c75-4b8e-b771-474d3896e639}</Project>
+      <Name>Tavisca.Common.Plugins.BinarySerializer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\platform-common\Tavisca.Common.Plugins.Cassandra\Tavisca.Common.Plugins.Cassandra.csproj">
+      <Project>{370cc076-39cc-40cc-8f67-a16b1353b0a9}</Project>
+      <Name>Tavisca.Common.Plugins.Cassandra</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\platform-common\Tavisca.Common.Plugins.Consul\Tavisca.Common.Plugins.Configuration.csproj">
+      <Project>{9578cb32-2083-4b2b-80f7-5c95298fa03b}</Project>
+      <Name>Tavisca.Common.Plugins.Configuration</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\platform-common\Tavisca.Common.Plugins.Cryptography\Tavisca.Common.Plugins.Cryptography.csproj">
+      <Project>{9fb13296-37ea-4186-998c-363aff58992d}</Project>
+      <Name>Tavisca.Common.Plugins.Cryptography</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\platform-common\Tavisca.Common.Plugins.Crypto\Tavisca.Common.Plugins.Crypto.csproj">
+      <Project>{864975b0-61d8-4ec6-bb06-40511403b1da}</Project>
+      <Name>Tavisca.Common.Plugins.Crypto</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\platform-common\Tavisca.Common.Plugins.EnterpriseLibrary\Tavisca.Common.Plugins.EnterpriseLibrary.csproj">
+      <Project>{14e433da-2afa-499e-ab44-a12f51f88f9c}</Project>
+      <Name>Tavisca.Common.Plugins.EnterpriseLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\platform-common\Tavisca.Common.Plugins.ExchangeRate\Tavisca.Common.Plugins.ExchangeRate.csproj">
+      <Project>{aa3afaa4-b579-408e-b3ab-1d778e5d9622}</Project>
+      <Name>Tavisca.Common.Plugins.ExchangeRate</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\platform-common\Tavisca.Common.Plugins.JsonSerializer\Tavisca.Common.Plugins.JsonSerializer.csproj">
+      <Project>{da32dc0b-8865-401f-a236-21b757c8b224}</Project>
+      <Name>Tavisca.Common.Plugins.JsonSerializer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\platform-common\Tavisca.Common.Plugins.RabbitMq\Tavisca.Common.Plugins.RabbitMq.csproj">
+      <Project>{7180bf67-ae3e-4769-8e3a-5bc617704278}</Project>
+      <Name>Tavisca.Common.Plugins.RabbitMq</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\platform-common\Tavisca.Common.Plugins.RecyclableStreamPool\Tavisca.Common.Plugins.RecyclableStreamPool.csproj">
+      <Project>{eb73bcb8-ee4b-4ceb-ab47-0ab86e51408a}</Project>
+      <Name>Tavisca.Common.Plugins.RecyclableStreamPool</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\platform-common\Tavisca.Common.Plugins.Redis\Tavisca.Common.Plugins.Redis.csproj">
+      <Project>{d8f79165-0b4e-41e8-9ebf-d1db5183358b}</Project>
+      <Name>Tavisca.Common.Plugins.Redis</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\platform-common\Tavisca.Common.Plugins.ServiceCaller\Tavisca.Common.Plugins.ServiceCaller.csproj">
+      <Project>{722423c8-ccc0-4476-84f9-43c73a0a7c72}</Project>
+      <Name>Tavisca.Common.Plugins.ServiceCaller</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\platform-common\Tavisca.Common.Plugins.StatsD\Tavisca.Common.Plugins.StatsD.csproj">
+      <Project>{e925d23a-158c-43de-b987-cbe05780efb7}</Project>
+      <Name>Tavisca.Common.Plugins.StatsD</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\platform-common\Tavisca.Common.Plugins.StructureMap\Tavisca.Common.Plugins.StructureMap.csproj">
+      <Project>{b5d002d5-7123-4648-abbd-5d013bf1b44c}</Project>
+      <Name>Tavisca.Common.Plugins.StructureMap</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\platform-common\Tavisca.Common.Plugins.TransitCodeGenerator\Tavisca.Common.Plugins.TransitCodeGenerator.csproj">
+      <Project>{0b1ce593-aa78-4268-ac61-cbbf62203b4c}</Project>
+      <Name>Tavisca.Common.Plugins.TransitCodeGenerator</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\platform-common\Tavisca.Common.Plugins.WebClient\Tavisca.Common.Plugins.WebClient.csproj">
+      <Project>{a76d16b6-98c3-432c-9efe-d58656ad832c}</Project>
+      <Name>Tavisca.Common.Plugins.WebClient</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\platform-common\Tavisca.Platform.Common.Models\Tavisca.Platform.Common.Models.csproj">
+      <Project>{0e282446-4149-4819-974e-fe23ecb10c72}</Project>
+      <Name>Tavisca.Platform.Common.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\platform-common\Tavisca.Platform.Common.Plugins.Json\Tavisca.Platform.Common.Plugins.Json.csproj">
+      <Project>{6e51c703-f680-45ac-b76e-774176175de3}</Project>
+      <Name>Tavisca.Platform.Common.Plugins.Json</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\platform-common\Tavisca.Platform.Common\Tavisca.Platform.Common.csproj">
+      <Project>{68b980e4-eb86-4883-a7ef-a14a1e133136}</Project>
+      <Name>Tavisca.Platform.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
- </Project>
+</Project>
